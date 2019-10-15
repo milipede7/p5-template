@@ -16,12 +16,11 @@ function draw () {
   square(mouseX, mouseY, 100)
   triangle(mouseX, mouseY, 20, 30, 500, 200)
   triangle(800, 700, 100, 200, mouseX, mouseY)
+  ellipse(100, 300, mouseX, 400);
+  arc(50, 55, 50, 50, 0, HALF_PI);
+  arc(200, 200, 200, 200, HALF_PI, PI);
+  arc(200, 200, 300, 300, PI, PI + QUARTER_PI);
+  arc(200, 200, 400, 400, PI + QUARTER_PI, TWO_PI);
   line(mouseX, mouseY, 900, 300);
   line(50, 50, mouseX, mouseY);
-  ellipse(100, 300, mouseX, 400);
-arc(50, 55, 50, 50, 0, HALF_PI);
-arc(200, 200, 200, 200, HALF_PI, PI);
-arc(200, 200, 300, 300, PI, PI + QUARTER_PI);
-arc(200, 200, 400, 400, PI + QUARTER_PI, TWO_PI);
-
 }
