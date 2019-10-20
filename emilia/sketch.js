@@ -3,17 +3,21 @@
 function setup () {
   // put setup code here
   createCanvas(window.innerWidth, window.innerHeight)
+  background(200, 200, 100)
 }
 
 function draw () {
   // put drawing code here
+
   if (mouseIsPressed) {
-    fill(50)
+    fill(110, 240, 100, 100)
   } else {
-    fill(1000)
+    fill(120, 250, 150, 150)
   }
+
   ellipse(mouseX, mouseY, 80, 80)
   square(mouseX, mouseY, 100)
+  stroke(100, 100, 100)
   triangle(mouseX, mouseY, 20, 30, 500, 200)
   triangle(800, 700, 100, 200, mouseX, mouseY)
   ellipse(100, 300, mouseX, 400);
@@ -23,4 +27,5 @@ function draw () {
   arc(200, 200, 400, 400, PI + QUARTER_PI, TWO_PI);
   line(mouseX, mouseY, 900, 300);
   line(50, 50, mouseX, mouseY);
+
 }
